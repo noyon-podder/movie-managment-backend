@@ -7,6 +7,13 @@ const createMovieIntoDB = async (movieData: TMovie) => {
   return result;
 };
 
+const getAllMovieFromDB = async () => {
+  const result = await Movie.find();
+
+  return result;
+};
+
 export const MovieService = {
   createMovieIntoDB,
+  getAllMovieFromDB,
 };
