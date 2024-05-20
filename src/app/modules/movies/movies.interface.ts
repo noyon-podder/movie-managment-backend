@@ -12,5 +12,5 @@ export type TMovie = {
   isDeleted: boolean;
   viewCount: number;
   reviews: TReview[];
-  //   slug: string;
+    slug: string;
 };

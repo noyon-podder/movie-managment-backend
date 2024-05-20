@@ -22,8 +22,16 @@ const getSpecificMovieByID = async (id: string) => {
   return result;
 };
 
+// get Specific Movie With Slug
+const getSpecificMovieWithSlug = async (slug: string) => {
+  const result = await Movie.findOne({ slug });
+
+  return result;
+};
+
 export const MovieService = {
   createMovieIntoDB,
   getAllMovieFromDB,
   getSpecificMovieByID,
+  getSpecificMovieWithSlug,
 };

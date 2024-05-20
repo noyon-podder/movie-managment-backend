@@ -9,4 +9,6 @@ router.get("/", MovieController.getAllMovie);
 
 router.get("/:movieId", MovieController.getSpecificMovie);
 
+router.get("/:slug", MovieController.getSpecificMovieWithSlug);
+
 export const MovieRoutes = router;
