@@ -15,7 +15,7 @@ const MovieSchema: Schema = new Schema<TMovie>({
   isDeleted: { type: Boolean, required: true, default: false },
   viewCount: { type: Number, required: true, default: 0 },
   reviews: { type: [ReviewSchema], required: true },
-  slug: { type: String, required: true, unique: true },
+  //   slug: { type: String, required: true, unique: true },
 });
 
 export const Movie = mongoose.model<TMovie>("Movie", MovieSchema);
